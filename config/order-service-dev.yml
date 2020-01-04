@@ -25,7 +25,5 @@ management:
     web:
       exposure:
         include: hystrix.stream
-feign:
-  hystrix:
-    enabled: true
+
     
