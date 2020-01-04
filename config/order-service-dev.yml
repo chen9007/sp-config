@@ -3,7 +3,17 @@ spring:
     name: order-service  
   cloud: 
    config: 
-     override-none: true  
+     override-none: true 
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh 
 server:
   port: 8201
 eureka:
