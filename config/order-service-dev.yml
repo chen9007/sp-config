@@ -9,6 +9,10 @@ spring:
     port: 5672
     username: admin
     password: admin
+feign:
+  hystrix: 
+   enabled: true
+
 
 server:
   port: 8201
